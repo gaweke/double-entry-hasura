@@ -1,0 +1,11 @@
+table:
+  name: journal_entry
+  schema: public
+array_relationships:
+- name: ledger_entries
+  using:
+    foreign_key_constraint_on:
+      column: journal_id
+      table:
+        name: ledger_entry
+        schema: public

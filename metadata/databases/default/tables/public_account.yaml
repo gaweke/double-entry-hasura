@@ -1,0 +1,15 @@
+table:
+  name: account
+  schema: public
+object_relationships:
+- name: account_category
+  using:
+    foreign_key_constraint_on: category_id
+array_relationships:
+- name: marketplaces
+  using:
+    foreign_key_constraint_on:
+      column: payment_account_id
+      table:
+        name: marketplace
+        schema: public

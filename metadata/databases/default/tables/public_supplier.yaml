@@ -1,0 +1,10 @@
+table:
+  name: supplier
+  schema: public
+object_relationships:
+- name: account
+  using:
+    foreign_key_constraint_on: purchase_account_id
+- name: accountByPaymentAccountId
+  using:
+    foreign_key_constraint_on: payment_account_id

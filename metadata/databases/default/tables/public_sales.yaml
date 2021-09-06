@@ -1,0 +1,25 @@
+table:
+  name: sales
+  schema: public
+object_relationships:
+- name: account
+  using:
+    foreign_key_constraint_on: sales_payment_account_id
+- name: accountByPurchasePaymentAccountId
+  using:
+    foreign_key_constraint_on: purchase_payment_account_id
+- name: journalEntryByPurchaseJournalId
+  using:
+    foreign_key_constraint_on: purchase_journal_id
+- name: journalEntryBySalesJournalId
+  using:
+    foreign_key_constraint_on: sales_journal_id
+- name: journal_entry
+  using:
+    foreign_key_constraint_on: cogs_journal_id
+- name: marketplace
+  using:
+    foreign_key_constraint_on: sales_marketplace_id
+- name: supplier
+  using:
+    foreign_key_constraint_on: purchase_supplier_id
