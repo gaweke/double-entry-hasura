@@ -2,7 +2,7 @@
   kind: postgres
   configuration:
     connection_info:
-      database_url: postgres://postgres:5ee8f7d555086a4040be84f5c2e3da43@dokku-postgres-pg:5432/pg
+      database_url: postgres://postgres@localhost:5432/doubleentrydb
       isolation_level: read-committed
       pool_settings:
         connection_lifetime: 600

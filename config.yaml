@@ -1,5 +1,5 @@
 version: 3
-endpoint: http://103.55.38.103:14302
+endpoint: http://finance-graphql.dudukmanis.id
 metadata_directory: metadata
 actions:
   kind: synchronous
