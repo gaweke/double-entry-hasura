@@ -18,4 +18,5 @@ jobs:
             cd /var/www/double-entry-hasura
             pkill -9 hasura-engine
             git pull
+            echo "$DATABASE_URL"
             hasura-engine --database-url "$DATABASE_URL" serve --server-port 8081 --cors-domain "*"
